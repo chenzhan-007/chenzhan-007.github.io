@@ -612,6 +612,34 @@
         height: 190px;
       }
     }
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.activity-card {
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid #eceef2;
+    border-radius: 18px;
+    padding: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.032);
+    text-align: center;
+    overflow: hidden;
+}
+
+.activity-image {
+    display: block;
+    width: 100%;
+    max-width: 130px;
+    height: 90px;
+    object-fit: cover;
+    margin: 12px auto 0;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+}
+    
   </style>
 </head>
 
@@ -1158,51 +1186,70 @@
       </div>
 
 <section class="card" id="notes">
+
     <h2>Activities</h2>
 
     <div class="activity-grid">
+
         <div class="activity-card">
+
             <h3>AFC会议优秀宣讲奖</h3>
+
             <p class="section-note">
                 南京，中国，2026年4月.
             </p>
+
             <img src="assets/A1.jpg"
-                 alt="AFC Conference Outstanding Presentation Award"
+                 alt="AFC会议优秀宣讲奖"
                  class="activity-image">
+
         </div>
 
+
         <div class="activity-card">
+
             <h3>智能无人应用挑战赛</h3>
+
             <p class="section-note">
                 灵蜂无人机俱乐部，江阴，中国，2026年8月.
             </p>
+
             <img src="assets/A2.jpg"
-                 alt="Intelligent Unmanned Systems Application Challenge"
+                 alt="智能无人应用挑战赛"
                  class="activity-image">
+
         </div>
 
+
         <div class="activity-card">
+
             <h3>篮球</h3>
+
             <p class="section-note">
-                灌篮低手
+                生命在于运动
             </p>
+
             <img src="assets/A3.jpg"
                  alt="Basketball"
                  class="activity-image">
+
         </div>
 
+
         <div class="activity-card">
+
             <h3>骑行</h3>
+
             <p class="section-note">
                 川藏线 over、环青海湖 over、环海南岛 over
             </p>
+
             <img src="assets/A4.jpg"
                  alt="Cycling"
                  class="activity-image">
         </div>
     </div>
 
-</section>
 </section>
   </main>
 
